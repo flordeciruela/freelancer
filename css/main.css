@@ -1,0 +1,29 @@
+/*
+ * Estilos de tu proyecto
+ */
+ header {
+ 	background-color: #18BC9C;
+ 	color: #fff;
+	padding: 100px 0;
+ }
+
+ nav {
+	 height: 100px;
+	 background-color: #2C3E50;
+	 width: 100%;
+	 position: fixed;
+	 top: 0;
+ }
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Portafolio*/
+.grid-content{
+  width: 900px;
+  margin: 0px auto;
+	background-color: green;
+	overflow: auto;
+}
