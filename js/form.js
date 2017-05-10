@@ -2,16 +2,6 @@
 var input = document.getElementsByTagName('input');
 
 var submit = input[3];
-var formulario = document.getElementsByTagName('form');
-
-submit.addEventListener('click',function(event) {
-  event.preventDefault();
-
-		if(input[0].value.length !=0 && input[1].value.length !=0 &&
-			 input[2].value.length !=0) {
-      formulario.reset();  // limpiar formulario
-		}
-})
 
 input[0].addEventListener("blur", function(){
 	var nTest = /^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$/g;
@@ -41,7 +31,7 @@ input[2].addEventListener("blur", function(){
 });
 
 input[3].addEventListener("blur", function(){
-	if(input[3].value.length == 0) {
+	if(input[3].value == "") {
 		input[3].nextElementSibling.innerText = "Ingresar comentario";
 	} else {
 		input[3].nextElementSibling.innerText = "";
