@@ -5,8 +5,9 @@
 	 text-align: center;
  }
 
- h1, h2 {
+ h1, h2, h3 {
 	 padding: 35px 0;
+	 	text-transform: uppercase;
  }
 
 /*header*/
@@ -16,6 +17,7 @@
  	color: #fff;
 	padding: 100px 0;
 	top: 100px;
+	text-transform: uppercase;
  }
 
  nav {
@@ -53,7 +55,7 @@ a:hover {
 	padding: 100px 0;
 	margin-top: 100px;
 }
-.grid-content{
+.grid-content {
 	display: flex;
   width: 85%;
 	height: 560px;
@@ -99,12 +101,14 @@ a:hover {
 #about {
 	background-color: #18BC9C;
 	color: #fff;
+	padding: 100px 0;
 }
 
 #about > div {
 	width: 50%;
 	display: flex;
 	margin: 0 auto;
+	margin-bottom: 30px;
 	justify-content: space-between;
 }
 
@@ -116,7 +120,6 @@ a:hover {
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	text-align: left;
-	text-transform: none;
 }
 
 #about a {
@@ -125,8 +128,6 @@ a:hover {
 	color: #fff;
 	padding: 10px;
 	text-decoration: none;
-	margin: 50px 0;
-	text-transform: none;
 }
 
 #about a:hover {
@@ -136,19 +137,102 @@ a:hover {
 }
 
 /*contact me */
+#contact {
+	padding: 100px 0;
+}
+
 form {
 	margin: 0 auto;
+	width: 50%;
 }
 
 #contact [type="text"] {
+	border: none;
+	border-top: 1px solid grey;
 	display: block;
 	margin: 0 auto;
-	width: 50%;
+	width: 100%;
 	padding: 20px 15px;
 	font-size: 1.5em;
+	outline: none;
 }
 
 #contact [type="submit"] {
+	background-color: #18BC9C;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
 	display: block;
-	margin: 20px 15px;
+	margin: 20px 0;
+	font-size: 1.2em;
+	padding: 13px 14px;
+}
+
+textarea {
+	border: none;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	width: 100%;
+	padding: 20px 15px;
+	font-size: 1.5em;
+	outline: none;
+	resize: none;
+}
+
+/*footer*/
+footer {
+	background-color: #2C3E50;
+	color: #fff;
+	height: 340px;
+	position: relative;
+}
+
+footer section:nth-child(1) {
+	display: flex;
+	justify-content: space-between;
+	padding: 3% 7em 0 11em;
+}
+
+footer section:nth-child(2) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #233140;
+	bottom: 0;
+	height: 70px;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8em;
+	position: absolute;
+	text-transform: none;
+	width: 100%;
+}
+
+footer div {
+	font-size: 1.2em;
+	width: 34%;
+
+}
+
+footer a.circle {
+	border-radius: 100%;
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 10px;
+}
+
+footer a.circle:hover {
+	background-color: #fff;
+	color: #18BC9C;
+}
+
+footer a.green {
+	text-decoration: none;
+}
+
+footer a.green:hover {
+	text-decoration-line: underline;
+}
+
+#location {
+	width: 21%;
 }

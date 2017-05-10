@@ -5,7 +5,6 @@
 	 margin: 0;
 	 padding: 0;
 	 font-family: 'Montserrat',sans-serif;
-	 text-transform: uppercase;
 	 box-sizing: border-box;
  }
 
@@ -31,6 +30,10 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.green {
+	color: #18BC9C;
 }
 
 /* The Close Button */
