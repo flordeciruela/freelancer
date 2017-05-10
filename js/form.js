@@ -1,7 +1,10 @@
 
 var input = document.getElementsByTagName('input');
-
 var submit = input[3];
+
+submit.addEventListener("click", function(event){
+	 event.preventDefault();
+});
 
 input[0].addEventListener("blur", function(){
 	var nTest = /^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$/g;
