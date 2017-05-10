@@ -16,6 +16,8 @@
  }
 
  nav {
+	 display: flex;
+	 align-items: center;
 	 height: 100px;
 	 background-color: #2C3E50;
 	 width: 100%;
@@ -32,6 +34,11 @@
  nav div:nth-child(2) {
  float: right;
  }
+
+ nav li {
+	display: inline-block;
+	list-style: none;
+}
 
 nav a {
 	text-decoration: none;
