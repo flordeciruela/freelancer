@@ -12,11 +12,9 @@
 
 /*header*/
  header {
-	position: relative;
  	background-color: #18BC9C;
  	color: #fff;
-	padding: 100px 0;
-	top: 100px;
+	padding: 200px 0 100px 0;
 	text-transform: uppercase;
  }
 
@@ -31,29 +29,63 @@
 	 position: fixed;
 	 top: 0;
 	 z-index: 1000;
+	 -webkit-transition: height 0.3s;
+	 -moz-transition: height 0.3s;
+	 transition: height 0.3s;
+ }
+
+ nav div > a {
+	 color: #fff;
+	 font-weight: 700;
+	 text-decoration: none;
+	 font-size: 1.5em;
+	 -webkit-transition: all 0.3s;
+	 -moz-transition: all 0.3s;
+	 transition: all 0.3s;
+ }
+
+ nav.retraer {
+	height: 70px;
+ }
+
+ nav div .retraer {
+	font-size: 1em;
  }
 
  nav li {
 	display: inline-block;
 	list-style: none;
-	margin-left: 30px;
 }
 
-nav a {
+li a {
 	text-decoration: none;
 	color: #fff;
 	font-weight: bolder;
 	font-size: 14px;
+	padding: 15px;
 }
+
+.resaltar {
+	background-color: #18BC9C;
+}
+
+.resaltar:hover {
+	background-color: #fff;
+}
+
 
 a:hover {
 	color: #18BC9C;
 }
 
+ nav div > a:hover {
+	color: #fff;
+}
+
+
 /*Portafolio*/
 #portfolio {
 	padding: 100px 0;
-	margin-top: 100px;
 }
 .grid-content {
 	display: flex;
