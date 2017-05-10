@@ -180,7 +180,7 @@ form {
 
 #contact [type="text"] {
 	border: none;
-	border-top: 1px solid grey;
+	border-top: 1px solid rgba(149, 153, 145, 0.5);
 	display: block;
 	margin: 0 auto;
 	width: 100%;
@@ -200,10 +200,14 @@ form {
 	padding: 13px 14px;
 }
 
+#contact [type="submit"]:hover {
+	background-color: #128F76;
+}
+
 textarea {
 	border: none;
-	border-top: 1px solid grey;
-	border-bottom: 1px solid grey;
+	border-top: 1px solid rgba(149, 153, 145, 0.5);
+	border-bottom: 1px solid rgba(149, 153, 145, 0.5);
 	width: 100%;
 	padding: 20px 15px;
 	font-size: 1.5em;
