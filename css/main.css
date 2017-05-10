@@ -1,6 +1,14 @@
 /*
  * Estilos de tu proyecto
  */
+ header, section {
+	 text-align: center;
+ }
+
+ h1, h2 {
+	 padding: 35px 0;
+ }
+
  header {
  	background-color: #18BC9C;
  	color: #fff;
@@ -11,8 +19,18 @@
 	 height: 100px;
 	 background-color: #2C3E50;
 	 width: 100%;
+	 padding: 0 7.5%;
 	 position: fixed;
 	 top: 0;
+	 z-index: 1000;
+ }
+
+ nav div:nth-child(1) {
+	float: left;
+ }
+
+ nav div:nth-child(2) {
+ float: right;
  }
 
 nav a {
@@ -21,9 +39,48 @@ nav a {
 }
 
 /*Portafolio*/
+#portfolio {
+	padding: 100px 0;
+}
 .grid-content{
-  width: 900px;
-  margin: 0px auto;
-	background-color: green;
+	display: flex;
+  width: 85%;
+	height: 560px;
 	overflow: auto;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+
+.grid {
+	display: inline-block;
+	position: relative;
+}
+
+.grid img{
+	transition: .5s ease;
+	backface-visibility: hidden;
+	zoom: 40%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.grid:hover .middle {
+	background-color: #18BC9C;
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  margin: 30% 0;
 }
